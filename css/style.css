@@ -1,0 +1,249 @@
+/* Variabel */
+
+:root {   
+    --redsdi: rgba(207,46,46);
+    --merah: rgba(255,0,0);
+    --maroon: rgba(139,0,0);
+}
+
+/*  Global */
+
+section{
+    padding: 50px 0px 100px;
+    box-sizing: border-box;
+}
+
+/* Costume CSS */
+
+.bg-redsdi{
+    background: var(--redsdi) !important;
+}
+
+.border-sdi{
+    border: 1px solid var(--redsdi) !important;
+}
+
+.text-bg-sdi{
+    background: var(--redsdi) !important;
+    color: white !important;
+}
+.btn-sdi{
+    background: var(--redsdi) !important;
+    color: white !important;
+}
+.btn-sdi:hover{
+    border: 1px solid var(--redsdi) !important;
+    background: white !important;
+    color: var(--redsdi) !important;
+}
+
+.bg-merah{
+    background: var(--merah) !important;
+}
+.border-merah{
+    border: 2px solid var(--merah) !important;
+}
+
+a.bg-merah:hover{
+    background: var(--maroon) !important;
+}
+a.border-merah:hover{
+    border: 2px solid var(--maroon) !important;
+}
+
+/* Navigasi */
+.navbar-nav a{
+    text-decoration: none;
+    color: rgba(207,46,46) !important;
+    border-bottom:2px solid rgba(207,46,46) !important;
+}
+.navbar-nav a:hover{
+    text-decoration: none;
+    color: rgba(139,0,0) !important;
+    border-bottom:2px solid rgba(139,0,0) !important;
+}
+.text-redsdi{
+    color: rgba(207,46,46) !important;
+}
+
+/* Hero Section */
+
+#hero-section{
+    /* background: url(image/banner.png) no-repeat; */
+    background-size: cover;
+    position: center;
+    height: 500px;
+    padding: 0px;
+    position: relative;
+}
+
+#hero-section::after{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,0,0,0.5);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#hero-section .row{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+#hero-section h2{
+    margin-top: 120px;
+}
+
+/* Brand Produk */
+
+#brand-produk .row{
+    row-gap: 3rem;
+}
+
+/* Values Produk */
+
+#values-produk .row{
+    row-gap: 3rem;
+}
+
+/* Testimoni */
+#testimoni{
+    background-color: rgba(207,46,46) !important;
+   }
+#testimoni h1{
+    margin-top: 25px;
+}
+
+/* Awards */
+#awards img{
+    height: 150px;
+}
+
+/* Buy */
+#buy .links {
+    column-gap: 2rem;
+}
+
+/* Card */
+
+#card .row{
+    row-gap: 3rem;
+}
+
+
+/* Whatsapp */
+.btn-floating {
+    position: fixed;
+    left: 25px;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+    border-radius: 100px;
+    border: 0;
+    z-index: 999;
+    color: white;
+    transition: .2s;
+}
+
+.btn-floating:hover{
+    width: auto;
+    height: 60px;
+    padding: 0 30px;
+    cursor: pointer;
+
+}
+
+.btn-floating span {
+    text-align: left;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-left: 5px;
+    transition: .2s;
+    line-height: 5px;
+    display: none; 
+}
+
+.btn-floating.whatsapp{
+    bottom: 75px;
+    background-color: #38a329;
+    border: 2px solid white;
+}
+
+.btn-floating:hover span {
+    display: inline-block;
+}
+.btn-floating:hover img {
+    display: none;
+}
+
+/* Footer  */
+
+#footer-info{
+ /* background-color: rgba(255,0,0,0.5); */
+}
+
+#footer-info .sosmed-icon{
+    height: 30px;
+    width: 30px;
+}
+
+#footer-info a{
+    color: rgba(207,46,46) !important;
+}
+#footer-info a:hover, nav .links a:hover{
+    color: var(--maroon) !important;
+}
+
+#backtotop {
+    z-index: 99;
+    bottom: 150px;
+    right: 30px;
+}
+
+#messanger {
+    z-index: 99;
+    bottom: 100px;
+    right: 30px;
+}
+
+
+/* Mobile */
+@media (max-width: 768px){
+    #buy .links{
+        row-gap: 1rem;
+    }
+
+    #buy .links a{
+        width: 200px;
+    }
+}
+/* Dekstop */
+
+@media (min-width: 992px){
+
+    /* Values Produk */
+    #values-produk img{
+        height: auto;
+        width: 100%;
+
+    }
+    #brand-produk img{
+        height: auto;
+        width: 100%;
+
+    }
+
+    #values-produk .detail{
+        width: 100%;
+    }
+
+
+
+}
