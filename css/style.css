@@ -186,9 +186,6 @@ a.border-merah:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(207,46,46);
-    border: 5px solid #b2bfff;
-    color: #fff;
     margin-left: -20px;
     margin-right: 10px;
     transform: scale(1.2);
