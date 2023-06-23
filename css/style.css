@@ -85,7 +85,6 @@ a.border-merah:hover{
 
 #hero-section{
     background: url(../image/banner_produ.jpg) no-repeat;
-    background-position: 0 -20px;
     background-size: cover;
     position: center;
     height: 550px;
