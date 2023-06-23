@@ -91,6 +91,7 @@ a.border-merah:hover{
     height: 550px;
     padding: 0px;
     position: relative;
+    background-attachment: fixed;
 
 }
 
