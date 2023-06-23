@@ -91,6 +91,7 @@ a.border-merah:hover{
     height: 550px;
     padding: 0px;
     position: relative;
+    background-attachment: fixed;
 
 }
 
@@ -115,6 +116,10 @@ a.border-merah:hover{
 }
 #hero-section h2{
     margin-top: 150px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+}
+#hero-section p{
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
 }
 
 /* Brand Produk */
@@ -161,6 +166,16 @@ a.border-merah:hover{
 #card .row{
     row-gap: 3rem;
 }
+/* .card:hover{
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    -webkit-transform: scale(1.1) !important;
+    -ms-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+    z-index: 2;
+} */
 
 
 
