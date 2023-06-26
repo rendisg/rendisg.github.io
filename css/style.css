@@ -4,6 +4,8 @@
     --redsdi: rgba(207,46,46);
     --merah: rgba(255,0,0);
     --maroon: rgba(139,0,0);
+    --footer: rgba(36, 36, 36);
+    --footer-text: rgb(97, 97, 97); 
 }
 
 /*  Global */
@@ -32,6 +34,12 @@ section#cta1{
 
 .bg-redsdi{
     background: var(--redsdi) !important;
+}
+.bg-footer{
+    background: var(--footer) !important;
+}
+.footer-text{
+    color: var(--footer-text) !important;
 }
 
 .border-sdi{
@@ -84,7 +92,7 @@ a.border-merah:hover{
 /* Hero Section */
 
 #hero-section{
-    /* background: url(../image/banner_produ.jpg) no-repeat; */
+    background: url(../image/banner_produ.jpg) no-repeat;
     background-position: 0 -20px;
     background-size: cover;
     position: center;
@@ -165,16 +173,16 @@ a.border-merah:hover{
 #card .row{
     row-gap: 3rem;
 }
-/* .card:hover{
+.card:hover{
     text-shadow: none !important;
     box-sizing: border-box !important;
     cursor: pointer !important;
     transition: all 0.3s ease !important;
     -webkit-transform: scale(1.1) !important;
-    -ms-transform: scale(1.1) !important;
+    -ms-transform: scale(1) !important;
     transform: scale(1.1) !important;
     z-index: 2;
-} */
+}
 
 
 
@@ -264,6 +272,12 @@ a.border-merah:hover{
 }
 
 /* Footer  */
+
+#footer-info1 a{
+    text-decoration: none;
+    color: white;
+    border-bottom:2px solid white !important;
+}
 
 #footer-info{
  /* background-color: rgba(255,0,0,0.5); */
