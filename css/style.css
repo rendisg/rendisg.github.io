@@ -5,7 +5,7 @@
     --merah: rgba(255,0,0);
     --maroon: rgba(139,0,0);
     --footer: rgba(36, 36, 36);
-    --footer-text: rgb(97, 97, 97); 
+    --footer-text: rgb(139, 139, 139); 
 }
 
 /*  Global */
@@ -92,8 +92,8 @@ a.border-merah:hover{
 /* Hero Section */
 
 #hero-section{
-    background: url(../image/banner_produ.jpg) no-repeat;
-    background-position: 0 -20px;
+    background: url(../image/banner_produ.jpg);
+    background-position: 0 -10px;
     background-size: cover;
     position: center;
     height: 550px;
@@ -273,11 +273,19 @@ a.border-merah:hover{
 
 /* Footer  */
 
+#footer-info1{
+    height: 90px;
+}
+
 #footer-info1 a{
     text-decoration: none;
     color: white;
     border-bottom:2px solid white !important;
 }
+#footer-info1 p{
+    font-size: 0.8em;
+}
+
 
 #footer-info{
  /* background-color: rgba(255,0,0,0.5); */
