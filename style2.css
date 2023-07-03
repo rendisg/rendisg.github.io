@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+
+svg path{
+    fill: rgba(207,46,46);
+    stroke: #eee;
+    stroke-width: .25;
+
+}
+
+svg path:hover {
+    fill: rgba(139,0,0);
+    transition: 0.6s;
+}

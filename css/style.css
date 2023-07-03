@@ -92,7 +92,7 @@ a.border-merah:hover{
 /* Hero Section */
 
 #hero-section{
-    /* background: url(../image/banner_produ.jpg); */
+    background: url(../image/banner_produ.jpg);
     background-position: 0 -10px;
     background-size: cover;
     position: center;
@@ -173,7 +173,7 @@ a.border-merah:hover{
 #card .row{
     row-gap: 3rem;
 }
-.card:hover{
+/* .card:hover{
     text-shadow: none !important;
     box-sizing: border-box !important;
     cursor: pointer !important;
@@ -182,7 +182,7 @@ a.border-merah:hover{
     -ms-transform: scale(1) !important;
     transform: scale(1.1) !important;
     z-index: 2;
-}
+} */
 
 
 
@@ -314,6 +314,129 @@ a.border-merah:hover{
     bottom: 100px;
     right: 30px;
 }
+
+ /* Portfolio */
+ .mitra .mitra-item {
+    margin-bottom: 30px;
+  }
+  
+  .mitra .mitra-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .mitra .mitra-wrap::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  .mitra .mitra-wrap .mitra-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mitra .mitra-wrap .mitra-info::before {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+  }
+  
+  .mitra .mitra-wrap .mitra-info::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+  }
+  
+  .mitra .mitra-wrap .mitra-info h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .mitra .mitra-wrap .mitra-info p {
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mitra .mitra-wrap .mitra-links {
+    text-align: center;
+    z-index: 4;
+  }
+  
+  .mitra .mitra-wrap .mitra-links a {
+    color: #fff;
+    margin: 0 2px;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .mitra .mitra-wrap .mitra-links a:hover {
+    color: #969696;
+  }
+  
+  .mitra .mitra-wrap:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .mitra .mitra-wrap:hover .mitra-info {
+    opacity: 1;
+  }
+  
+  .mitra .mitra-wrap:hover .mitra-info::before {
+    top: 15px;
+    left: 15px;
+  }
+  
+  .mitra .mitra-wrap:hover .mitra-info::after {
+    bottom: 15px;
+    right: 15px;
+  }
 
 
 /* Mobile */
