@@ -11,6 +11,18 @@
 
 /*  Global */
 
+.hr-sdi{
+    color: var(--redsdi) !important;
+    background-color: var(--redsdi) !important;
+    opacity: 0.7;
+    height: 2px !important;
+    display: block !important;
+    size: 50px !important;
+    margin-top: 35px !important;
+    margin-bottom: 35px !important;
+    
+}
+
 section{
     padding: 50px 0px 100px;
     box-sizing: border-box;
