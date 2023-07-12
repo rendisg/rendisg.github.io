@@ -101,6 +101,10 @@ section#kata{
 a.bg-merah:hover{
     background: var(--maroon) !important;
 }
+a.bg-putih:hover{
+    transform:scale(1.1) !important;
+    transition: all 0.3s ease !important;
+}
 a.border-merah:hover{
     border: 2px solid var(--maroon) !important;
 }
