@@ -17,22 +17,22 @@
     opacity: 0.7;
     height: 2px !important;
     display: block !important;
-    size: 50px !important;
+    size: 30px !important;
     margin-top: 35px !important;
     margin-bottom: 35px !important;
     
 }
 
 section{
-    padding: 50px 0px 100px;
+    padding: 100px 0px 100px;
     box-sizing: border-box;
 }
 section#card{
-    padding: 0px 0px 50px;
+    padding: 0px 0px 20px;
     box-sizing: border-box;
 }
 section#about{
-    padding: 50px 0px 50px;
+    padding: 100px 0px 50px;
     box-sizing: border-box;
 }
 section#cta{
@@ -43,6 +43,19 @@ section#cta1{
     padding: 70px 0px 0px;
     box-sizing: border-box;
 }
+section#values-produk{
+    padding: 50px 0px 100px;
+    box-sizing: border-box;
+}
+section#mitra{
+    padding: 50px 0px 50px;
+    box-sizing: border-box;
+}
+section#kata{
+    padding: 100px 10px 50px;
+    box-sizing: border-box;
+}
+
 /* Costume CSS */
 
 .bg-redsdi{
@@ -135,7 +148,7 @@ a.border-merah:hover{
     z-index: 1;
 }
 #hero-section h2{
-    margin-top: 150px;
+    margin-top: 170px;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
 }
 #hero-section p{
@@ -146,6 +159,12 @@ a.border-merah:hover{
 
 #brand-produk .row{
     row-gap: 3rem;
+}
+
+/* Kata */
+
+#kata .row{
+    min-height: 250px;
 }
 
 /* Values Produk */
