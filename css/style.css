@@ -32,7 +32,7 @@ section#card{
     box-sizing: border-box;
 }
 section#about{
-    padding: 50px 0px 100px;
+    padding: 100px 0px 50px;
     box-sizing: border-box;
 }
 section#cta{
@@ -44,7 +44,7 @@ section#cta1{
     box-sizing: border-box;
 }
 section#values-produk{
-    padding: 50px 0px 50px;
+    padding: 50px 0px 100px;
     box-sizing: border-box;
 }
 section#mitra{
