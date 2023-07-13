@@ -198,6 +198,12 @@ a.border-merah:hover{
     height: 280px;
 }
 
+/* cta */
+
+#cta .tengah{
+    text-align: left !important;
+}
+
 
 /* Awards */
 #awards img{
@@ -494,6 +500,10 @@ a.border-merah:hover{
         width: 70px;
         margin-top: 20px;
 
+    }
+
+    #cta .tengah{
+        text-align: center !important;
     }
 }
 
