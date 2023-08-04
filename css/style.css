@@ -71,6 +71,9 @@ section#kata{
 .border-sdi{
     border: 1px solid var(--redsdi) !important;
 }
+.text-card{
+    text-align: left !important;
+}
 
 .text-bg-sdi{
     background: var(--redsdi) !important;
