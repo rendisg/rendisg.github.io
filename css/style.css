@@ -112,13 +112,13 @@ a.border-merah:hover{
 /* Navigasi */
 .navbar-nav a{
     text-decoration: none;
-    color: rgba(207,46,46) !important;
-    border-bottom:2px solid rgba(207,46,46) !important;
+    color: black !important;
+
 }
 .navbar-nav a:hover{
     text-decoration: none;
-    color: rgba(139,0,0) !important;
-    border-bottom:2px solid rgba(139,0,0) !important;
+    color: var(--redsdi) !important;
+
 }
 .text-redsdi{
     color: rgba(207,46,46) !important;
@@ -514,8 +514,8 @@ a.border-merah:hover{
 
     /* Values Produk */
     #values-produk img{
-        height: 110px;
-        width: 110px;
+        height: 90px;
+        width: 90px;
         margin-bottom: 10px;
 
     }
