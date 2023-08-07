@@ -14,6 +14,7 @@
 .hr-sdi{
     color: var(--redsdi) !important;
     background-color: var(--redsdi) !important;
+    width: 50% !important;
     opacity: 0.7;
     height: 2px !important;
     display: block !important;
@@ -22,6 +23,7 @@
     margin-bottom: 35px !important;
     
 }
+
 
 section{
     padding: 100px 0px 100px;
@@ -123,9 +125,17 @@ a.border-merah:hover{
     color: var(--redsdi) !important;
 
 }
+
+nav.scrolled {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.7);
+    transition: all 80ms ease-out;
+}
+
 .text-redsdi{
     color: rgba(207,46,46) !important;
 }
+
+
 
 /* Hero Section */
 
@@ -189,9 +199,6 @@ a.border-merah:hover{
 #testimoni{
     background-color: rgba(207,46,46) !important;
    }
-#testimoni h1{
-    margin-top: 25px;
-}
 
 /* About */
 
