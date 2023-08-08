@@ -65,6 +65,9 @@ section#kata{
 .bg-footer{
     background: var(--footer) !important;
 }
+.star-sdi{
+    color: var(--redsdi) !important;
+}
 .footer-text{
     color: var(--footer-text) !important;
 }
