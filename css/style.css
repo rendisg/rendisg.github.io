@@ -91,6 +91,9 @@ section#kata{
     border: 1px solid var(--redsdi) !important;
     background: white !important;
     color: var(--redsdi) !important;
+    transform:scale(1.1) !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0px 1px 10px rgba(207,46,46, 1);
 }
 
 .bg-merah{
@@ -111,6 +114,7 @@ a.bg-merah:hover{
 a.bg-putih:hover{
     transform:scale(1.1) !important;
     transition: all 0.3s ease !important;
+    
 }
 a.border-merah:hover{
     border: 2px solid var(--maroon) !important;
@@ -119,17 +123,47 @@ a.border-merah:hover{
 /* Navigasi */
 .navbar-nav a{
     text-decoration: none;
-    color: black !important;
+    color: #666666 !important;
 
 }
 .navbar-nav a:hover{
     text-decoration: none;
-    color: var(--redsdi) !important;
+    color: var(--redsdi) !important;    
 
 }
 
+.nav-item {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: red;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    background-color: var(--redsdi);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: var(--redsdi);
+}
+
+.nav-link:hover::after{
+width: 100%;
+}
+
 nav.scrolled {
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 5px rgba(0,0,0, 0.4);
     opacity:0.9;
     transition: all 80ms ease-out;
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<style>
+.menu {
+    display: inline-block;
+    position: relative;
+}
+
+.text {
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    padding: 15px;
+}
+
+.text::after{
+    content: '';
+    position: absolute;
+    background-color: #38a329;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.text:hover{
+    color: #38a329;
+}
+
+.text:hover::after{
+    width: 100%;
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li class="menu">
+                <a href="#" class="text"> Asu</a>
+            </li>
+            <li class="menu">
+                <a href="#" class="text"> Asu</a>
+            </li>
+            <li class="menu">
+                <a href="#" class="text"> Asu</a>
+            </li>
+        </ul>
+    </nav>
+   
+</body>
+</html>
