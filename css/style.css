@@ -357,10 +357,10 @@ nav.scrolled {
 }
 
 #footer-info a{
-    color: rgba(207,46,46) !important;
+    color: black !important;
 }
 #footer-info a:hover, nav .links a:hover{
-    color: var(--maroon) !important;
+    color: rgba(207,46,46) !important;
 }
 
 #backtotop {
