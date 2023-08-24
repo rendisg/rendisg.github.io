@@ -359,6 +359,7 @@ nav.scrolled {
 }
 
 .accordion-button:not(.collapsed) {
+    border-radius: 5px;
     border: 0px !important;
     color: var(--redsdi) !important;
     background-color: white !important;
@@ -372,6 +373,7 @@ nav.scrolled {
 }
 
 .accordion-button:focus {
+    border-radius: 5px;
     z-index: 3;
     color: var(--redsdi) !important;
     border-color: var(--bs-accordion-btn-focus-border-color);
