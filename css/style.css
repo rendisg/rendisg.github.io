@@ -141,7 +141,7 @@ a.border-merah:hover {
 .navbar-nav a {
     font-size: 16px;
     text-decoration: none;
-    color: #666666 !important;
+    color: #4a4a4a !important;
 
 }
 
@@ -183,7 +183,7 @@ a.border-merah:hover {
 
 nav.scrolled {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
-    opacity: 0.9;
+    opacity: 0.96;
     transition: all 80ms ease-out;
 }
 
