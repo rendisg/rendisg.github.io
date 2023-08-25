@@ -152,6 +152,10 @@ a.border-merah:hover {
 
 }
 
+.nav-link:hover {
+    color: var(--redsdi);
+}
+
 .nav-item {
     display: inline-block;
     position: relative;
@@ -176,9 +180,6 @@ a.border-merah:hover {
     
 }
 
-.nav-link:hover {
-    color: var(--redsdi);
-}
 
 .nav-link:hover::after {
     width: 100%;
@@ -600,6 +601,59 @@ nav .links a:hover {
 }
 
 
+/* Skala Mitra */
+
+
+.containerskala { 
+    width: 600px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.tab_box{
+    width: 100%;
+    border-bottom: 2px solid var(--redsdi);
+    position: relative;
+}
+
+.tab_box .tab_btn{
+    color: darkgray;
+    background: none;
+    padding: 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-bottom: ;
+}
+
+.tab_box .tab_btn.active{
+    color: var(--redsdi);
+}    
+
+.content_box{
+    padding: 20px;
+
+}
+
+.content_box .content {
+    display: none;
+    animation: moving .5s ease;
+}
+
+@keyframes moving{
+    from{transform: translateX(50px);opacity: 0;}
+    to{transform: translateX(0px);opacity: 1;}
+}
+
+.content_box .content.active {
+    display: block;
+}
+
+
+
+
 /* Mobile */
 @media (max-width: 768px) {
     #buy .links {
@@ -619,6 +673,26 @@ nav .links a:hover {
 
     #cta .tengah {
         text-align: center !important;
+    }
+
+    .tab_box .tab_btn{
+        color: darkgray;
+        background: none;
+        padding: 14px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px){
+    .tab_box .tab_btn{
+        color: darkgray;
+        background: none;
+        padding: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
     }
 }
 
