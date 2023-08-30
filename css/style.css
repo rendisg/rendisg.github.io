@@ -109,6 +109,19 @@ section#kata {
     box-shadow: 0px 1px 10px rgba(207, 46, 46, 1);
 }
 
+.btn-sdi2 {
+    border: 1px solid var(--redsdi) !important;
+    background: white !important;
+    color: var(--redsdi) !important;
+    
+}
+
+.btn-sdi2:hover {
+    background: var(--redsdi) !important;
+    color: white !important;
+    box-shadow: 0px 1px 10px rgba(207, 46, 46, 1);
+}
+
 .bg-merah {
     background: var(--merah) !important;
 }
