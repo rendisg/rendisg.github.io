@@ -293,12 +293,11 @@ display: none;
 .slides1 .button-banner{
     position: absolute;
     top: 80%;
-    left: 50%;
-    margin-left: 4%;
+    left: 29%;
     transform: translate(-50%,-50%);
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
 
 }
 
