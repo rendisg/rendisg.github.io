@@ -228,6 +228,11 @@ nav.scrolled {
     box-shadow: 0px 1px 3px rgba(207, 46, 46, 0.4), 0px -1px 3px rgba(207, 46, 46, 0.4) !important;
 }
 
+.navbar-brand img{
+    transition: 0.6s ease;
+    width: 120px;
+}
+
 /* Hero Section */
 
 #hero-section {
@@ -268,6 +273,98 @@ nav.scrolled {
 
 #hero-section p {
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+}
+
+.slides1{
+    width: 100%;
+    position: relative;
+}
+
+.slides1 .slide1{
+display: none;
+}
+
+.slides1 .slide1 img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slides1 .button-banner{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-left: 4%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.slides1 .button-banner .prev{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    background: var(--redsdi) !important;
+    color: white !important;
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+.slides1 .button-banner .prev:hover{
+    border: 1px solid var(--redsdi) !important;
+    background: white !important;
+    color: var(--redsdi) !important;
+    transform: scale(1.1) !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0px 1px 10px rgba(207, 46, 46, 1);
+}
+
+@keyframes fade {
+    from{opacity: 0.3;}
+    to{opacity: 1;}
+}
+
+@media ( max-width: 992px){
+    .slides1 .button-banner .prev{
+        font-size: 18px;
+        padding: 13px;
+    }
+}
+
+@media ( max-width: 768){
+    .slides1 .button-banner .prev{
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+
+@media ( max-width: 576px){
+    .slides1 .button-banner .prev{
+        font-size: 11px;
+        padding: 7px;
+    }
+    .navbar-brand img{
+        width: 100px;
+    }
+}
+
+@media ( max-width: 420px){
+    .slides1 .button-banner .prev{
+        margin-top: 10px;
+        font-size: 10px;
+        padding: 6px;
+    }
+}
+
+@media ( max-width: 360px){
+    .slides1 .button-banner .prev{
+        font-size: 8px;
+        padding: 5px;
+    }
 }
 
 /* Brand Produk */
