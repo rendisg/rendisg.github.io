@@ -930,7 +930,7 @@ const dataOrder = {
                 {
                     nama: "Syahrul",
                     image: "img/test.jpg",
-                    kota: "bandung",
+                    kota: "Padalarang",
                     tanggal: "2 hari yang lalu",
                     produk: "Paket Hemat",
                     url: "www.google.com"
@@ -938,7 +938,7 @@ const dataOrder = {
                 {
                     nama: "Pieter",
                     image: "img/test.jpg",
-                    kota: "Bekasi",
+                    kota: "Bogor",
                     tanggal: "1 hari yang lalu",
                     produk: "Paket Sultan",
                     url: "www.google.com"
@@ -946,7 +946,7 @@ const dataOrder = {
                 {
                     nama: "April",
                     image: "img/test.jpg",
-                    kota: "Cimahi",
+                    kota: "Tanggerang",
                     tanggal: "15 jam yang lalu",
                     produk: "Paket Sultan",
                     url: "www.google.com"
@@ -954,7 +954,7 @@ const dataOrder = {
                 {
                     nama: "Aska",
                     image: "img/test.jpg",
-                    kota: "Cimahi",
+                    kota: "Kendari",
                     tanggal: "10 Jam yang lalu",
                     produk: "Paket Hemat",
                     url: "www.google.com"
@@ -962,7 +962,7 @@ const dataOrder = {
                 {
                     nama: "Kharis",
                     image: "img/test.jpg",
-                    kota: "Cimahi",
+                    kota: "Banjarmasin",
                     tanggal: "7 Jam yang lalu",
                     produk: "Paket Premium",
                     url: "www.google.com"
@@ -978,7 +978,7 @@ const dataOrder = {
                 {
                     nama: "Elsha",
                     image: "img/test.jpg",
-                    kota: "Cimahi",
+                    kota: "Nias",
                     tanggal: "26 Menit yang lalu",
                     produk: "Paket Premium",
                     url: "www.google.com"
@@ -986,7 +986,7 @@ const dataOrder = {
                 {
                     nama: "Agnes",
                     image: "img/test.jpg",
-                    kota: "Cimahi",
+                    kota: "Sukabumi",
                     tanggal: "14 Menit yang lalu",
                     produk: "Paket Sultan",
                     url: "www.google.com"
@@ -994,7 +994,7 @@ const dataOrder = {
                 {
                     nama: "Rezki",
                     image: "img/test.jpg",
-                    kota: "Cimahi",
+                    kota: "Cikarang",
                     tanggal: "9 Menit yang lalu",
                     produk: "Paket Sultan",
                     url: "www.google.com"
@@ -1002,7 +1002,7 @@ const dataOrder = {
                 {
                     nama: "Tio",
                     image: "img/test.jpg",
-                    kota: "Cimahi",
+                    kota: "Jakarta",
                     tanggal: "5 Menit yang lalu",
                     produk: "Paket Sultan",
                     url: "www.google.com"
@@ -1015,7 +1015,7 @@ const dataOrder = {
             if (el.image != "") {
                 img = el.image
             }
-            document.querySelector('.livesales').innerHTML +='<div class="item"><div class="content"><button class="close"></button><span class="info"><b>'+el.nama+'</b> telah membeli <b>'+el.produk+'</b><small>'+el.tanggal+'</small></span></div></div>'
+            document.querySelector('.livesales').innerHTML +='<div class="item"><div class="content"><button class="close"></button><span class="info"><b>'+el.nama+'</b> dari <b>'+el.kota+'</b> telah membeli <b>'+el.produk+'</b><small>'+el.tanggal+'</small></span></div></div>'
         })
 
         document.querySelector('.livesales > .item:not(:first-child)').classList.remove('active')
