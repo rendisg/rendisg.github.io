@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <div class="livesales"></div>
+    <script>
+        const dataOrder = {
+            "data": [
+                {
+                    nama: "rendi",
+                    image: "img/test.jpg",
+                    kota: "bandung",
+                    tanggal: "1 hari yang lalu",
+                    produk: "Paket Sultan",
+                    url: "www.google.com"
+                },
+                {
+                    nama: "Abdul",
+                    image: "img/test.jpg",
+                    kota: "Bekasi",
+                    tanggal: "2 hari yang lalu",
+                    produk: "Paket Sultan",
+                    url: "www.google.com"
+                },
+                {
+                    nama: "Azis",
+                    image: "img/test.jpg",
+                    kota: "Cimahi",
+                    tanggal: "2 hari yang lalu",
+                    produk: "Paket Sultan",
+                    url: "www.google.com"
+                }
+
+            ]
+        };
+        dataOrder.data.forEach((el) => {
+            var img = "img/test.jpg";
+            if (el.image != "") {
+                img = el.image
+            }
+            document.querySelector('.livesales').innerHTML +='<div class="item"><div class="image"><span class="img" style="background-image:url(' + img + ')"></div><div class="content"><button class="close"></button><span class="info"><b>'+el.nama+'</b> dari <b>'+el.kota+'</b> telah membeli <b>'+el.produk+'</b><small>'+el.tanggal+'</small></span></div></div>'
+        })
+
+        document.querySelector('.livesales > .item:not(:first-child)').classList.remove('active')
+        setInterval(() => {
+            document.querySelector('.livesales .item:first-child').classList.add('active');
+            setTimeout(() => {
+                document.querySelectorAll('.livesales .item:first-child').forEach((el) =>{
+                    el.classList.remove('active');
+                })
+                document.querySelector('.livesales').append(document.querySelector('.livesales').childNodes[0])
+            },4000);
+        },6000);
+
+        document.querySelectorAll('.item .close').forEach((el) =>{
+            el.addEventListener('click', ()=>{
+                document.querySelector('.item').classList.remove('active')
+            })
+        })
+    </script>
+</body>
+
+</html>

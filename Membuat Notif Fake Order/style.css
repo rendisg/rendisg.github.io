@@ -1,0 +1,101 @@
+body{
+    background: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.livesales .item{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    overflow: hidden;
+    z-index: 200;
+    max-width: 300px;
+    font-size: 16px;
+    background: rgba(255,255,255,.95);
+    padding: 15px 20px;
+    box-shadow: 0 10px 15px rgba(0 0 0 /8%);
+    color: #222;
+    transition: all .4s ease;
+    border-radius: 4px;
+    line-height: 1.4;
+    opacity: 0;
+    visibility: hidden;
+}
+.livesales .item.active{
+    right: 10px;
+    bottom: 100px;
+    opacity: 1;
+    visibility: visible;
+}
+.livesales .item .image{
+    display: flex;
+    padding-right: 20px;
+
+}
+
+.livesales .item .img{
+    background: #eeeeee;
+    background-size: cover;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 80%;
+    box-shadow: 0 0 0 4px rgba(0 0 0 2%);
+
+}
+
+.livesales .item .content{
+    position: relative;
+}
+
+.livesales .item button{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 100%;
+    margin: -15px -20px 10px 20px;
+    border: none;
+    background: transparent;
+    color: #222;
+    cursor: pointer;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+}
+
+.livesales .item button:before{
+    content: 'x';
+
+}
+
+.livesales .item .info b{
+    color:#222;
+
+}
+
+.livesales .item info a{
+    color:green;
+    text-decoration: none;
+}
+
+.livesales .item .info a:hover{
+    text-decoration: underline;
+}
+
+.livesales .item small{
+    font-size: 75%;
+    opacity: .8;
+    display: block;
+    border-top: 1px solid rgba(0,0,0,.06);
+    margin-top: 8px;
+    padding-top: 8px;
+}
+.livesales .item small:after{
+    content:'';
+    display: block;
+    clear: both;
+
+}
