@@ -68,6 +68,11 @@ section#kata {
     box-sizing: border-box;
 }
 
+section#cuntdown {
+    padding: 10px 10px 50px;
+    box-sizing: border-box;
+}
+
 /* Costume CSS */
 
 .bg-redsdi {
@@ -393,6 +398,9 @@ display: none;
     .navbar-brand img{
         width: 100px;
     }
+    .footer-image{
+        width: 100px !important;
+    }
 }
 
 @media ( max-width: 420px){
@@ -414,6 +422,46 @@ display: none;
 
 #brand-produk .row {
     row-gap: 3rem;
+}
+
+/* CUNTDOWN */
+
+#timer{
+    width: 50%;
+}
+#timer p{
+    color: var(--redsdi);
+}
+
+.box{
+    background-color: white;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70px;
+    border-radius: 5px;
+    transition: 0.6s ease;
+    
+}
+
+
+
+.box span{
+    font-size: 30px;
+    color: black;
+    transition: 0.6s ease;
+}
+
+.box p{
+    margin: 0;
+    color: var(--redsdi);
+}
+
+.name{
+    display: flex;
+    gap: 40px;
 }
 
 /* Kata */
@@ -684,6 +732,11 @@ display: none;
 }
 
 /* Footer  */
+
+.footer-image {
+    transition: 0.6s ease;
+    width: 120px;
+}
 
 #footer-info1 {
     height: 90px;
