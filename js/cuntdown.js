@@ -21,10 +21,10 @@ function timeBetweenDates(toDate){
     if(difference <= 0){
         clearInterval(timer);
     }else{
-        let seconds = Math.floor(difference / 1000) - Detik;
-        let minutes = Math.floor(seconds / 60) - Menit;
-        let hours = Math.floor(minutes / 60) - Jam;
-        let days = Math.floor(hours / 24)  - Hari;
+        let seconds = Math.floor(difference / 1000);
+        let minutes = Math.floor(seconds / 60);
+        let hours = Math.floor(minutes / 60) - 22;
+        let days = 0;
 
 
         hours %= 24;
