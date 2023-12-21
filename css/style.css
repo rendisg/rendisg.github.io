@@ -490,6 +490,15 @@ display: none;
     height: 280px;
 }
 
+/* Skala */
+
+#cta iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 280px;
+    transition: all 0.3s ease !important;
+}
+
 /* cta */
 
 #cta .tengah {
@@ -1029,6 +1038,13 @@ nav .links a:hover {
         height: 330px;
     }
 
+    #cta iframe {
+        width: 100%;
+        max-width: 560px;
+        height: 315px;
+        transition: all 0.3s ease !important;
+    }
+    
 
 
 
@@ -1046,6 +1062,14 @@ nav .links a:hover {
         width: 100px;
 
     }
+
+    #cta iframe {
+        width: 100%;
+        max-width: 560px;
+        height: 315px;
+        transition: all 0.3s ease !important;
+    }
+    
 
 
 }
